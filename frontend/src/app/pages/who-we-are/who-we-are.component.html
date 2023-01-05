@@ -1,0 +1,47 @@
+<section class="bg-light" id="services">
+  <section class="p-5 page-section bg-light" id="team">
+    <div class="container mb-5">
+        <div class="text-center">
+            <h2 *ngIf="showTitle" class="section-heading text-uppercase">the Team</h2>
+        </div>
+        <div class="row">
+            <div *ngFor="let item of team" class="col-md-4">
+                <div >
+                    <img class="rounded-circle img-fluid" [src]="item.img" alt="..." />
+                    <h4>{{item.name}}</h4>
+                    <p class="text-muted">{{item.perfil}}</p>
+                    <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-twitter"></i></a>
+                    <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-linkedin-in"></i></a>
+                    <a class="btn btn-dark"  routerLink="/quienes-somos/3">Ver Perfil</a>
+                </div>
+            </div>
+
+            <!-- Elimino todas las columnas hechas a mano xq ahora las hacemos con un ng for -->
+
+            <!-- <div class="col-md-4">
+                <div >
+                    <img class="rounded-circle img-fluid" src="assets/img/team/2.jpg" alt="..." />
+                    <h4>Diana</h4>
+                    <p class="text-muted">Desarrolladora Web</p>
+                    <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-twitter"></i></a>
+                    <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-linkedin-in"></i></a>
+                    <a class="btn btn-dark"  routerLink="/quienes-somos/3">Ver Perfil</a>
+                </div>
+            </div>
+            <div class="col-md-4 ">
+                <div >
+                    <img class="rounded-circle img-fluid"  src="assets/img/team/3.jpg" alt="..." />
+                    <h4>Joaquín</h4>
+                    <p class="text-muted">Diseñador Gráfico</p>
+                    <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-twitter"></i></a>
+                    <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-linkedin-in"></i></a>
+                    <a class="btn btn-dark"  routerLink="/quienes-somos/3" >Ver Perfil</a>
+                </div>
+            </div> -->
+        </div>
+    </div>
+  </section>
+  </section>
